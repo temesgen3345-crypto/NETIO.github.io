@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netio – Vi tar bedriften din på nett</title>
+    <style>
+        body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#f5f5f5; color:#333; }
+        header { background:#0f172a; color:white; padding:50px 20px; text-align:center; }
+        nav { background:#020617; padding:10px; text-align:center; }
+        nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+        section { padding:50px 20px; max-width:1100px; margin:auto; }
+        h2 { margin-bottom:20px; }
+        .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+        .card { background:white; padding:25px; border-radius:12px; box-shadow:0 6px 15px rgba(0,0,0,0.1); }
+        .price { font-size:32px; font-weight:bold; margin:15px 0; }
+        form { display:flex; flex-direction:column; gap:15px; }
+        input, textarea, button { padding:12px; border-radius:8px; border:1px solid #ccc; font-size:16px; }
+        button { background:#0f172a; color:white; border:none; cursor:pointer; }
+        button:hover { background:#1e293b; }
+        footer { text-align:center; padding:25px; background:#e5e7eb; }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- LOGO -->
+    <h1>NETIO</h1>
+    <p>Vi tar bedriften din på nett – enkelt, raskt og rimelig</p>
+</header>
+
+<nav>
+    <a href="#om">Om oss</a>
+    <a href="#tjenester">Tjenester</a>
+    <a href="#priser">Priser</a>
+    <a href="#butikk">Nettbutikk</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section id="om">
+    <h2>Om Netio</h2>
+    <p>Netio hjelper små og lokale bedrifter som ikke er på nett ennå. Vi lager profesjonelle nettsider, nettbutikker og digitale løsninger – uten komplisert prat.</p>
+</section>
+
+<section id="tjenester">
+    <h2>Tjenester</h2>
+    <div class="cards">
+        <div class="card"><h3>Nettsider</h3><p>Moderne, mobilvennlige nettsider klare for Google.</p></div>
+        <div class="card"><h3>Nettbutikk</h3><p>Selg produkter online med enkel betaling.</p></div>
+        <div class="card"><h3>Kontakt & synlighet</h3><p>Kontaktskjema, e-post og hjelp med synlighet.</p></div>
+    </div>
+</section>
+
+<section id="priser">
+    <h2>Priser</h2>
+    <div class="cards">
+        <div class="card"><h3>Start</h3><p class="price">1 999 kr</p><p>Enkel nettside – perfekt for små bedrifter.</p></div>
+        <div class="card"><h3>Pro</h3><p class="price">3 999 kr</p><p>Flere sider + kontaktskjema.</p></div>
+        <div class="card"><h3>Butikk</h3><p class="price">6 999 kr</p><p>Nettbutikk med betaling.</p></div>
+    </div>
+</section>
+
+<section id="butikk">
+    <h2>Nettbutikk (eksempel)</h2>
+    <div class="cards">
+        <div class="card"><h3>Produkt 1</h3><p>Beskrivelse av produkt.</p><button>Kjøp</button></div>
+        <div class="card"><h3>Produkt 2</h3><p>Beskrivelse av produkt.</p><button>Kjøp</button></div>
+    </div>
+</section>
+
+<section id="kontakt">
+    <h2>Kontakt Netio</h2>
+    <form action="mailto:dinmail@epost.no" method="post" enctype="text/plain">
+        <input type="text" name="navn" placeholder="Navn" required />
+        <input type="email" name="epost" placeholder="E-post" required />
+        <textarea name="melding" rows="5" placeholder="Hva trenger du hjelp med?" required></textarea>
+        <button type="submit">Send melding</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 NETIO – Enkelt. Digitalt. Effektivt.</p>
+</footer>
+
+</body>
+</html>
